@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "zillaslab";
+    font-style: normal;
+    font-weight: 500;
+    src: local("zillaslab") url("../../public/fonts/zillaslab/ZillaSlab-Regular.woff2") format('woff2');
+    display: swap;
+}

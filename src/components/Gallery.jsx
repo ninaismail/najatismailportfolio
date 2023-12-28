@@ -4,7 +4,7 @@ export default function Gallery({images, close}) {
   console.log(images)
   return (
     <Popup onClose={close}>
-    <div className="relative z-20 lg:w-[900px] md:w-[748px] sm:w-[620px] w-[260px] h-auto aspect-video">
+    <div className="relative z-20 lg:w-[900px] md:w-[748px] sm:w-[620px] w-[200px] h-auto aspect-video">
     <Slider>
     {Array.isArray(images)&&images.map((item, i) => (
     <img

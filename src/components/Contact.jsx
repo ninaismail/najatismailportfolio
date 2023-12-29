@@ -1,8 +1,8 @@
 const Contact = () => {
 
     return (
-        <section className="relative w-full min-h-[200px] mb-[20px] mx-auto text-center bg-beige text-darkblue flex flex-col justify-end items-center gap-4">
-          <h1 className="lg:text-4xl md:text-xl sm:text-lg font-[700]">Say hi👋 and leave me a message</h1>
+        <section className="relative w-full min-h-[200px] mx-auto py-5 text-center bg-beige text-darkblue flex flex-col justify-end items-center gap-4">
+          <h1 className="lg:text-4xl md:text-xl sm:text-lg  font-[700]">Say hi👋 and leave me a message</h1>
           <div className="flex justify-center items-center gap-[10px] mx-auto">
             <a href="mailto:najatt.ismail@gmail.com?subject=Mail from Your Portfolio Website" target="_blank" rel="noopener noreferrer">
             <svg fill="#2A2D32" className="w-[36px] h-[36px]" width="64px" height="64px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">

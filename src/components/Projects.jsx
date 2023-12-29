@@ -11,7 +11,7 @@ const data = [
             {src:"/images/alray/image4.webp"},            
         ],
         name: "Al Ray",
-        brief: "A brief description of the first project.",
+        brief: "A governmental platform for the Saudi Irrigation Organization.",
         link: "https://www.sio.gov.sa",
         github:"",
         stacks: ["Next.js"]
@@ -26,7 +26,7 @@ const data = [
             {src:"/images/mannasat/image5.webp"},            
         ],
         name: "Mannasat",
-        brief: "A brief description of the first project.",
+        brief: "A SaaS solution for restaurants that branches, clients and drivers can use to accomplish their respective goals.",
         link: "https://www.mannasat.net",
         github:"",
         stacks: ["Next.js"]
@@ -51,12 +51,12 @@ const data = [
             {src:"/images/icedcoffeespot/image15.webp"},
         ],
         name: "The Iced Coffee Spot",
-        brief: "A brief description of the first project.",
+        brief: "A coffee spot ordering and delivery system that an iced coffee lover can use to order his/her morning iced coffee online.",
         link: "",
-        github: [
-            {frontend:"https://github.com/ninaismail/icedcoffeespotreactapp"},
-            {backend:"https://github.com/ninaismail/icedcoffeespotnodeapi"}
-        ],
+        github: {
+            frontend:"https://github.com/ninaismail/icedcoffeespotreactapp",
+            backend:"https://github.com/ninaismail/icedcoffeespotnodeapi"
+        },
         stacks: ["React","Vite","Node.js","Express","MongoDB"]
     }, 
     {
@@ -69,12 +69,12 @@ const data = [
             {src:"/images/bookabook/image5.webp"},
         ],
         name: "Book a Book",
-        brief: "A brief description of the first project.",
+        brief: "A library book borrowing system that the reader can use to search and filter books, find available ones and request them online for a specified time.",
         link: "",
-        github: [
-            {frontend:"https://github.com/ninaismail/mylibrarynextapp"},
-            {backend:"https://github.com/ninaismail/mylibrarylaravelapi"}
-        ],
+        github: {
+            frontend:"https://github.com/ninaismail/mylibrarynextapp",
+            backend:"https://github.com/ninaismail/mylibrarylaravelapi"
+        },
         stacks: ["Next.js","Laravel","MySQL"]
     }, 
 ];
@@ -86,29 +86,34 @@ const Projects = () => {
       setShowGallery(i);
     };
     return (
-        <section id="my_projects" className="relative w-full lg:h-screen h-full mx-auto bg-olive text-beige text-center flex flex-col justify-center gap-4">
-            <h1 className="text-[8vh] font-[700]">Check out my work!</h1>
+        <section id="my_projects" className="relative w-full lg:h-screen h-full mx-auto py-5 bg-olive text-beige text-center flex flex-col justify-center gap-4">
+            <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-[700]">Check out my work!</h1>
             <p className="w-11/12 mx-auto lg:text-4xl md:text-xl sm:text-lg text-center font-[300]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <div className="w-11/12 mx-auto flex flex-wrap justify-center items-center gap-2">
+            <div className="w-11/12 mx-auto flex flex-wrap justify-center items-center gap-4">
             {Array.isArray(data)&&data.map((item, i) => (
               <>
-              <div key={i} className="xl:w-[24%] lg:w-1/4 sm:w-1/2 w-full min-h-[294px] bg-lightbeige text-darkblue shadow-lg rounded-lg p-4 ease duration-300 hover:scale-105">
+              <div key={i} className="xl:w-[24%] lg:w-1/4 sm:w-1/2 w-full min-h-[294px] mb-4 bg-lightbeige text-darkblue shadow-lg rounded-lg p-4 ease duration-300 hover:scale-105">
                 <img
                    src={item.cover_image}
                    alt={item.name}
                    className="w-full aspect-video cursor-pointer"
                    onClick={()=>toggleGallery(i)}
                 />
-                <div className="mt-4 flex flex-col justify-between space-y-[4px]]">
+                <div className="mt-4 flex flex-col justify-between space-y-[8px]">
                    <h2 className="sm:text-xl font-[500]">{item.name}</h2>
                    <p className="text-sm font-[300]">{item.brief}</p>
-                   <ul className="list-style-none flex flex-wrap justify-center items-end">
+                   <ul className="list-style-none flex flex-wrap justify-center items-center">
                        {Array.isArray(item.stacks)&&item.stacks.map((stack, i) => (
                        <li key={i} className="bg-darkblue text-lightbeige border brder-darkblue font-[300] text-[12px] p-2 rounded-full">{stack}</li>
                        ))}
                    </ul>
+                   <div className="flex flex-wrap justify-between items-cnter gap-4">
+                    {item.link && <a href={item.link} target="_blank" rel="noopener noreferrer" className="underline cursor-pointer text-md font-[700] hover:brightness-115">View</a>}
+                    <a href={item.github.frontend} target="_blank" rel="noopener noreferrer" className="underline cursor-pointer text-md font-[700] hover:brightness-115">Frontend Repo</a>
+                    {item.github.backend && <a href={item.github.backend} target="_blank" rel="noopener noreferrer" className="underline cursor-pointer text-md font-[700] hover:brightness-115">Backend Repo</a>}
+                   </div>
                 </div>
               </div>    
               {showGallery===i && 

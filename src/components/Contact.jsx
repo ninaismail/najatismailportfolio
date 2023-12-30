@@ -1,7 +1,7 @@
 const Contact = () => {
 
     return (
-        <section className="relative w-screen min-h-[200px] mx-auto py-5 text-center bg-beige text-darkblue flex flex-col justify-end items-center gap-4">
+        <section className="relative w-full min-h-[200px] mx-auto py-5 text-center bg-beige text-darkblue flex flex-col justify-end items-center gap-4">
           <h1 className="lg:text-4xl md:text-xl sm:text-lg font-[700]">Say hi👋 and leave me a message</h1>
           <div className="flex justify-center items-center gap-4 mx-auto">
             <a href="mailto:najatt.ismail@gmail.com?subject=Mail from Your Portfolio Website" target="_blank" rel="noopener noreferrer">

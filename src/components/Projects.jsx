@@ -11,7 +11,7 @@ const data = [
             {src:"/images/alray/image4.webp"},            
         ],
         name: "Al Ray",
-        brief: "A governmental platform for the Saudi Irrigation Organization.",
+        brief: "A governmental platform for the Saudi Irrigation Organization so citizens can benifit from its services from right where they are.",
         link: "https://www.sio.gov.sa",
         github:"",
         stacks: ["Next.js"]
@@ -69,7 +69,7 @@ const data = [
             {src:"/images/bookabook/image5.webp"},
         ],
         name: "Book a Book",
-        brief: "A library book borrowing system that the reader can use to search and filter books, find available ones and request them online for a specified time.",
+        brief: "A library book borrowing system that the reader can use to search and filter books, find available ones and request them for a specified time.",
         link: "",
         github: {
             frontend:"https://github.com/ninaismail/mylibrarynextapp",
@@ -86,15 +86,15 @@ const Projects = () => {
       setShowGallery(i);
     };
     return (
-        <section id="my_projects" className="relative w-full lg:h-screen h-full mx-auto py-5 bg-olive text-beige text-center flex flex-col justify-center gap-4">
+        <section id="my_projects" className="relative w-full h-full mx-auto py-5 bg-olive text-beige text-center flex flex-col justify-center gap-4">
             <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-[700]">Check out my work!</h1>
             <p className="w-11/12 mx-auto lg:text-4xl md:text-xl sm:text-lg text-center font-[300]">
-            I am a skilled web developer contributing to a diverse range of projects, showcasing proficiency in web development and modern technology stacks. Here's a snapshot of some of my notable projects:
+            I'm a skilled web developer contributing to a diverse range of projects, showcasing proficiency in web development and modern technology stacks. Here's a snapshot of some of my notable projects:
             </p>
             <div className="w-11/12 mx-auto flex flex-wrap justify-center items-center gap-4">
             {Array.isArray(data)&&data.map((item, i) => (
               <>
-              <div key={i} className="xl:w-[24%] lg:w-1/4 sm:w-1/2 w-full min-h-[294px] mb-4 bg-lightbeige text-darkblue shadow-lg rounded-lg p-4 ease duration-300 hover:scale-105">
+              <div key={i} className="2xl:w-[24%] lg:w-[49%] sm:w-[45%] w-full min-h-[300px] mb-4 bg-lightbeige text-darkblue shadow-lg rounded-lg p-4 ease duration-300 hover:scale-105">
                 <img
                    src={item.cover_image}
                    alt={item.name}

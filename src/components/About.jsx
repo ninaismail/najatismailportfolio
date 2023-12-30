@@ -1,6 +1,6 @@
 const About = () => {
     return (
-    <section className="w-full 2xl:h-screen mx-auto py-5 bg-beige text-darkolive flex flex-col justify-center items-center gap-y-4">
+    <section className="w-screen 2xl:h-screen mx-auto py-5 bg-beige text-darkolive flex flex-col justify-center items-center gap-y-4">
         <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-center font-[500]">Hi I'm Najat and I'm a Developer.</h1>
         <ul className="w-11/12 list-style-none 2xl:columns-3 sm:columns-2 space-y-4">
             <img alt="Najat Ismail"

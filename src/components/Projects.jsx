@@ -110,9 +110,9 @@ const Projects = () => {
                        ))}
                    </ul>
                    <div className="flex flex-wrap justify-between items-cnter gap-4">
-                    {item.link && <a href={item.link} target="_blank" rel="noopener noreferrer" className="underline cursor-pointer sm:text-md font-[700] hover:brightness-115">View</a>}
-                    <a href={item.github.frontend} target="_blank" rel="noopener noreferrer" className="underline cursor-pointer sm:text-md font-[700] hover:brightness-115">Frontend Repo</a>
-                    {item.github.backend && <a href={item.github.backend} target="_blank" rel="noopener noreferrer" className="underline cursor-pointer sm:text-md font-[700] hover:brightness-115">Backend Repo</a>}
+                    {item.link && <a href={item.link} target="_blank" aria-label={`View the published webdite of ${item.title}`} rel="noopener noreferrer" className="underline cursor-pointer sm:text-md font-[700] hover:brightness-115">View</a>}
+                    <a href={item.github.frontend} target="_blank" aria-label={`View my frontend repo for ${item.title}`} rel="noopener noreferrer" className="underline cursor-pointer sm:text-md font-[700] hover:brightness-115">Frontend Repo</a>
+                    {item.github.backend && <a href={item.github.backend} target="_blank"aria-label={`View my backend repo for ${item.title}`} rel="noopener noreferrer" className="underline cursor-pointer sm:text-md font-[700] hover:brightness-115">Backend Repo</a>}
                    </div>
                 </div>
               </div>    

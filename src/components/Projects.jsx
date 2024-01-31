@@ -91,28 +91,28 @@ const Projects = () => {
             <p className="w-11/12 mx-auto lg:text-4xl md:text-xl sm:text-lg text-center font-[300]">
             I'm a skilled web developer contributing to a diverse range of projects, showcasing proficiency in web development and modern technology stacks. Here's a snapshot of some of my notable projects:
             </p>
-            <div className="w-11/12 mx-auto flex flex-wrap justify-center items-center gap-5">
+            <div className="w-11/12 mx-auto flex flex-wrap justify-center items-center gap-4">
             {Array.isArray(data)&&data.map((item, i) => (
               <>
-              <div key={i} className="2xl:w-[24%] lg:w-[49%] sm:w-[45%] w-full min-h-[300px] bg-lightbeige text-darkblue shadow-lg rounded-lg p-4 ease duration-300 hover:scale-105 mb-4">
+              <div key={i} className="2xl:w-[24%] lg:w-[49%] md:w-[45%] sm:w-[48%] w-full xl:min-h-[300px] sm:min-h-[468px] min-h-[300px] bg-lightbeige text-darkblue shadow-lg rounded-lg p-4 ease duration-300 hover:scale-105 mb-4">
                 <img
                    src={item.cover_image}
                    alt={item.name}
                    className="w-full aspect-video cursor-pointer"
                    onClick={()=>toggleGallery(i)}
                 />
-                <div className="mt-4 flex flex-col justify-between space-y-[8px]">
-                   <h2 className="sm:text-xl font-[500]">{item.name}</h2>
+                <div className="flex flex-col justify-between space-y-[8px] mt-4">
+                   <h2 className="sm:text-2xl text-lg font-[700]">{item.name}</h2>
                    <p className="text-sm font-[300]">{item.brief}</p>
-                   <ul className="list-style-none flex flex-wrap justify-center items-center">
+                   <ul className="min-h-[72px] list-style-none flex flex-wrap justify-center items-center">
                        {Array.isArray(item.stacks)&&item.stacks.map((stack, i) => (
                        <li key={i} className="min-w-[70px] bg-darkblue text-lightbeige border brder-darkblue font-[300] text-[12px] p-2 rounded-full">{stack}</li>
                        ))}
                    </ul>
-                   <div className="flex flex-wrap justify-between items-cnter gap-4">
-                    {item.link && <a href={item.link} target="_blank" aria-label={`View the published webdite of ${item.title}`} rel="noopener noreferrer" className="underline cursor-pointer sm:text-md font-[700] hover:brightness-115">View</a>}
-                    <a href={item.github.frontend} target="_blank" aria-label={`View my frontend repo for ${item.title}`} rel="noopener noreferrer" className="underline cursor-pointer sm:text-md font-[700] hover:brightness-115">Frontend Repo</a>
-                    {item.github.backend && <a href={item.github.backend} target="_blank"aria-label={`View my backend repo for ${item.title}`} rel="noopener noreferrer" className="underline cursor-pointer sm:text-md font-[700] hover:brightness-115">Backend Repo</a>}
+                   <div className="flex flex-wrap justify-between items-end gap-4">
+                    {item.link && <a href={item.link} target="_blank" aria-label={`View the published webdite of ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[700] hover:brightness-115">View <span className="text-2xl">&rarr;</span></a>}
+                    <a href={item.github.frontend} target="_blank" aria-label={`View my frontend repo for ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[700] hover:brightness-115">Frontend Repo <span className="text-2xl">&rarr;</span></a>
+                    {item.github.backend && <a href={item.github.backend} target="_blank"aria-label={`View my backend repo for ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[700] hover:brightness-115">Backend Repo <span className="text-2xl">&rarr;</span></a>}
                    </div>
                 </div>
               </div>    

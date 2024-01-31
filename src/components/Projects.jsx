@@ -91,10 +91,10 @@ const Projects = () => {
             <p className="w-11/12 mx-auto lg:text-4xl md:text-xl sm:text-lg text-center font-[300]">
             I'm a skilled web developer contributing to a diverse range of projects, showcasing proficiency in web development and modern technology stacks. Here's a snapshot of some of my notable projects:
             </p>
-            <div className="w-11/12 mx-auto flex flex-wrap justify-center items-center gap-4">
+            <div className="w-11/12 mx-auto flex flex-wrap justify-center items-center gap-5">
             {Array.isArray(data)&&data.map((item, i) => (
               <>
-              <div key={i} className="2xl:w-[24%] lg:w-[49%] sm:w-[45%] w-full min-h-[300px] mb-4 bg-lightbeige text-darkblue shadow-lg rounded-lg p-4 ease duration-300 hover:scale-105">
+              <div key={i} className="2xl:w-[24%] lg:w-[49%] sm:w-[45%] w-full min-h-[300px] bg-lightbeige text-darkblue shadow-lg rounded-lg p-4 ease duration-300 hover:scale-105 mb-4">
                 <img
                    src={item.cover_image}
                    alt={item.name}
@@ -106,7 +106,7 @@ const Projects = () => {
                    <p className="text-sm font-[300]">{item.brief}</p>
                    <ul className="list-style-none flex flex-wrap justify-center items-center">
                        {Array.isArray(item.stacks)&&item.stacks.map((stack, i) => (
-                       <li key={i} className="bg-darkblue text-lightbeige border brder-darkblue font-[300] text-[12px] p-2 rounded-full">{stack}</li>
+                       <li key={i} className="min-w-[70px] bg-darkblue text-lightbeige border brder-darkblue font-[300] text-[12px] p-2 rounded-full">{stack}</li>
                        ))}
                    </ul>
                    <div className="flex flex-wrap justify-between items-cnter gap-4">

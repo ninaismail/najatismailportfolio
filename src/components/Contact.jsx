@@ -1,16 +1,14 @@
 const Contact = () => {
 
     return (
-        <section className="relative w-full min-h-[200px] mx-auto py-5 text-center bg-beige text-darkblue flex flex-col justify-end items-center gap-4">
-          <h1 className="lg:text-4xl md:text-xl sm:text-lg font-[700]">Say hi👋 and leave me a message</h1>
-          <div className="flex justify-center items-center gap-4 mx-auto">
-            <a href="mailto:najatt.ismail@gmail.com?subject=Mail from Your Portfolio Website" target="_blank" rel="noopener noreferrer">
-            <svg fill="#2A2D32" className="w-[36px] h-[36px]" width="64px" height="64px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                <g id="SVGRepo_iconCarrier"> <title>envelope</title> <path d="M16.015 18.861l-4.072-3.343-8.862 10.463h25.876l-8.863-10.567-4.079 3.447zM29.926 6.019h-27.815l13.908 11.698 13.907-11.698zM20.705 14.887l9.291 11.084v-18.952l-9.291 7.868zM2.004 7.019v18.952l9.291-11.084-9.291-7.868z"/> </g>
-            </svg>
+        <section className="w-full min-h-[400px] mx-auto py-5 text-center bg-beige text-darkblue flex flex-col justify-center items-center gap-4">
+          <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-[700]">Let's Work Together</h1>
+          <p className="relative lg:text-4xl md:text-xl sm:text-lg text-justify font-[300] sm:ms-10">Find me on these social media platforms and say hi! <span className="font-bold">OR</span> send me an&nbsp; 
+            <a href="mailto:najatt.ismail@gmail.com?subject=Mail from Your Portfolio Website" className="underline cursor-pointer sm:text-md font-[700] hover:brightness-115"target="_blank" rel="noopener noreferrer">
+            email
             </a>
+          </p>
+          <div className="flex justify-center items-center gap-4 mx-auto">
             <a href="https://www.linkedin.com/in/najat-ismail" target="_blank" rel="noopener noreferrer">
                 <svg fill="#2A2D32" className="w-[36px] h-[36px]" width="64px" height="64px" viewBox="-5.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"/>

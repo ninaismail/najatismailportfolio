@@ -94,7 +94,7 @@ const Projects = () => {
             <div className="w-11/12 mx-auto flex flex-wrap justify-center items-center gap-4">
             {Array.isArray(data)&&data.map((item, i) => (
               <>
-              <div key={i} className="2xl:w-[24%] lg:w-[49%] md:w-[45%] sm:w-[49%] w-full xl:min-h-[300px] sm:min-h-[468px] min-h-[300px] bg-lightbeige text-darkblue shadow-lg rounded-lg p-4">
+              <div key={i} className="2xl:w-[24%] lg:w-[49%] md:w-[45%] w-full xl:min-h-[300px] sm:min-h-[468px] min-h-[300px] bg-lightbeige text-darkblue shadow-lg rounded-lg p-4">
                 <img
                    src={item.cover_image}
                    alt={item.name}

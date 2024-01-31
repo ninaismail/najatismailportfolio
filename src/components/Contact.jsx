@@ -1,11 +1,11 @@
 const Contact = () => {
 
     return (
-        <section className="w-full min-h-[400px] mx-auto py-5 text-center bg-beige text-darkblue flex flex-col justify-center items-center gap-4">
+        <section className="w-full min-h-[400px] mx-auto text-center bg-beige text-darkblue flex flex-col justify-center items-center gap-4">
           <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-[700]">Let's Work Together</h1>
-          <p className="relative lg:text-4xl md:text-xl sm:text-lg text-justify font-[300] sm:ms-10">Find me on these social media platforms and say hi! <span className="font-bold">OR</span> send me an&nbsp; 
-            <a href="mailto:najatt.ismail@gmail.com?subject=Mail from Your Portfolio Website" className="cursor-pointer sm:text-md font-[700] hover:brightness-200"target="_blank" rel="noopener noreferrer">
-            email <span className="text-4xl">&rarr;</span>
+          <p className="lg:text-4xl md:text-xl sm:text-lg text-center font-[300] sm:p-0 p-4">Find me on these social media platforms and say hi👋 <span className="font-bold">OR</span> send me an&nbsp; 
+            <a href="mailto:najatt.ismail@gmail.com?subject=Mail from Your Portfolio Website" className="cursor-pointer sm:text-md font-[700] hover:brightness-200 inline-block"target="_blank" rel="noopener noreferrer">
+            email <span className="sm:text-4xl">&rarr;</span>
             </a>
           </p>
           <div className="flex justify-center items-center gap-4 mx-auto">

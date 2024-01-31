@@ -1,6 +1,6 @@
 const Banner = () => {
     return (
-        <section className="w-full h-screen mx-auto bg-olive text-beige flex flex-col justify-around">
+        <section className="w-full h-screen max-h-screen mx-auto bg-olive text-beige flex flex-col justify-around">
             <div className="w-11/12 border-t-[4px] border-beige mx-auto">
                 <div className="mt-[4px] flex justify-between items-center">
                 <small className="font-[400]">About me</small>

@@ -86,7 +86,7 @@ const Projects = () => {
       setShowGallery(i);
     };
     return (
-        <section id="my_projects" className="relative w-full h-full mx-auto py-5 bg-olive text-beige text-center flex flex-col justify-center gap-4">
+        <section id="my_projects" className="relative w-full h-full min-h-screen mx-auto py-5 bg-olive text-beige text-center flex flex-col justify-center gap-4">
             <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-[700]">Check Out My Work!</h1>
             <p className="w-11/12 mx-auto lg:text-4xl md:text-xl sm:text-lg text-center font-[300]">
             I'm a skilled web developer contributing to a diverse range of projects, showcasing proficiency in web development and modern technology stacks. Here's a snapshot of some of my notable projects:
@@ -94,7 +94,7 @@ const Projects = () => {
             <div className="w-11/12 mx-auto flex flex-wrap justify-center items-center gap-4">
             {Array.isArray(data)&&data.map((item, i) => (
               <>
-              <div key={i} className="2xl:w-[24%] lg:w-[49%] md:w-[45%] sm:w-[48%] w-full xl:min-h-[300px] sm:min-h-[468px] min-h-[300px] bg-lightbeige text-darkblue shadow-lg rounded-lg p-4 ease duration-300 hover:scale-105 mb-4">
+              <div key={i} className="2xl:w-[24%] lg:w-[49%] md:w-[45%] sm:w-[49%] w-full xl:min-h-[300px] sm:min-h-[468px] min-h-[300px] bg-lightbeige text-darkblue shadow-lg rounded-lg p-4">
                 <img
                    src={item.cover_image}
                    alt={item.name}

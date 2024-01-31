@@ -87,7 +87,7 @@ const Projects = () => {
     };
     return (
         <section id="my_projects" className="relative w-full h-full mx-auto py-5 bg-olive text-beige text-center flex flex-col justify-center gap-4">
-            <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-[700]">Check out my work!</h1>
+            <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-[700]">Check Out My work!</h1>
             <p className="w-11/12 mx-auto lg:text-4xl md:text-xl sm:text-lg text-center font-[300]">
             I'm a skilled web developer contributing to a diverse range of projects, showcasing proficiency in web development and modern technology stacks. Here's a snapshot of some of my notable projects:
             </p>

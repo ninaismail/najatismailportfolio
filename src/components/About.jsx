@@ -20,7 +20,7 @@ const About = () => {
             </li>
             <li className="relative lg:text-4xl md:text-xl sm:text-lg text-justify sm:ms-10">
                 <span className="sm:text-8xl text-6xl opacity-50 text-olive font-[700] absolute sm:-inset-5 -inset-2">2.</span>
-                <strong>My Mission: </strong> I produce the best result possible for every client case. I take pride in my craft and I don't settle for less. I approach my projects with planning and stratigic thinking because chaos will only lead to more chaos.
+                <strong>My Mission: </strong> I deliver the best result possible for every client case. I take pride in my craft and I give a 100%. I approach my projects with planning and strategy.
             </li>
             <li className="relative lg:text-4xl md:text-xl sm:text-lg text-justify sm:ms-10">
                 <span className="sm:text-8xl text-6xl opacity-50 text-olive font-[700] absolute sm:-inset-5 -inset-2">3.</span>

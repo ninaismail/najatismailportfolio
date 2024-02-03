@@ -14,9 +14,7 @@ const About = () => {
             <li className="relative lg:text-4xl md:text-xl sm:text-lg text-justify sm:ms-10">
                 <span className="sm:text-8xl text-6xl opacity-50 text-olive font-[700] absolute sm:-inset-5 -inset-2">1.</span>
                 <strong>My Values: </strong> 
-                I value authentecity in myself and others; no matter the situation, no matter the person, I stay authentic to myself.
-                I'm honest; I'm not afraid to say what needs to be said but with empathy and respect. 
-                And most inportantly I'm kind.
+                I value authentecity in myself and others. I'm honest and will say what needs to be said but with empathy and respect. And most inportantly I'm kind.
             </li>
             <li className="relative lg:text-4xl md:text-xl sm:text-lg text-justify sm:ms-10">
                 <span className="sm:text-8xl text-6xl opacity-50 text-olive font-[700] absolute sm:-inset-5 -inset-2">2.</span>

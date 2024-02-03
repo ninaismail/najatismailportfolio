@@ -9,7 +9,7 @@ const About = () => {
             className="w-full aspect-square bg-lightbeige p-5"/>
             <p className="relative lg:text-4xl md:text-xl sm:text-lg text-justify font-[300] sm:ms-10">
             I've been wanting to make a portfolio website for so long now, and this section is the reason I wouldn't do it!
-            How do I interduce myself in an effective way? Hmmm, maybe by telling you about my values, mission and vission 💡:
+            How do I introduce myself in an effective way? Hmmm, maybe by telling you about my values, mission and vission 💡:
             </p>
             <li className="relative lg:text-4xl md:text-xl sm:text-lg text-justify sm:ms-10">
                 <span className="sm:text-8xl text-6xl opacity-50 text-olive font-[700] absolute sm:-inset-5 -inset-2">1.</span>

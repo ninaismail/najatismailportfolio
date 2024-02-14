@@ -96,11 +96,17 @@ const Projects = () => {
               <>
               <div key={i} className="2xl:w-[24%] lg:w-[49%] md:w-[45%] w-full xl:min-h-[512px] lg:min-h-[528px] sm:min-h-[468px] min-h-[300px] bg-lightbeige text-darkgreen shadow-lg rounded-lg p-4">
                 <img
+                   data-tooltip="tooltip-open-gallery"
                    src={item.cover_image}
                    alt={item.name}
-                   className="w-full aspect-video cursor-pointer"
+                   className="w-full aspect-video cursor-pointer tooltip-on-hover"
                    onClick={()=>toggleGallery(i)}
                 />
+                <p data-tooltip-target="tooltip-open-gallery" role="tooltip" 
+                className="absolute z-10 px-3 py-2 text-sm font-[700] opacity-0 transition-opacity duration-300 bg-green text-beige rounded-lg shadow-sm tooltip">
+                    Open Gallery
+                    <span class="tooltip-arrow" data-popper-arrow></span>
+                </p>
                 <div className="flex flex-col justify-between space-y-[8px] mt-4">
                    <h2 className="sm:text-2xl text-lg font-[700]">{item.name}</h2>
                    <p className="font-[400]">{item.brief}</p>

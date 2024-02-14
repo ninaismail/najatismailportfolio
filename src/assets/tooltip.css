@@ -1,0 +1,3 @@
+.tooltip-on-hover:hover + .tooltip {
+opacity:1;
+}

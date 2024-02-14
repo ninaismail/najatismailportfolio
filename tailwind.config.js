@@ -7,16 +7,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["zillaslab"],
+        primary: ["lato"],
       },
       colors: {
-        beige:"#F4E4C9",
-        olive:"#6E6C54",
-        darkolive:"#413D24",
-        darkblue:"#2A2D32",
-        copper:"#894C2C",
+        beige:"#F5F5DC",
         lightbeige:"#FAFDF3",
-        lightblue:"#B1B9BC"
+        green:"#577458",
+        lightgreen:"#84b384",
+        darkgreen:"#1f291f"
       }
     }
   },

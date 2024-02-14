@@ -86,15 +86,15 @@ const Projects = () => {
       setShowGallery(i);
     };
     return (
-        <section id="my_projects" className="relative w-full h-full min-h-screen mx-auto py-5 bg-olive text-beige text-center flex flex-col justify-center gap-4">
-            <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-[700]">Check Out My Work!</h1>
-            <p className="w-11/12 mx-auto lg:text-4xl md:text-xl sm:text-lg text-center font-[300]">
+        <section id="my_projects" className="relative w-full h-full min-h-screen mx-auto py-5 bg-green text-beige selection:bg-lightgreen text-center flex flex-col justify-center gap-4">
+            <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl sm:text-4xl text-3xl font-[700] mb-4">Check Out My Work!</h1>
+            <p className="w-11/12 mx-auto lg:text-4xl md:text-xl sm:text-lg text-center font-[400] mb-2">
             I'm a skilled web developer contributing to a diverse range of projects, showcasing proficiency in web development and modern technology stacks. Here's a snapshot of some of my notable projects:
             </p>
             <div className="w-11/12 mx-auto flex flex-wrap justify-center items-center gap-4">
             {Array.isArray(data)&&data.map((item, i) => (
               <>
-              <div key={i} className="2xl:w-[24%] lg:w-[49%] md:w-[45%] w-full xl:min-h-[300px] sm:min-h-[468px] min-h-[300px] bg-lightbeige text-darkblue shadow-lg rounded-lg p-4">
+              <div key={i} className="2xl:w-[24%] lg:w-[49%] md:w-[45%] w-full xl:min-h-[512px] lg:min-h-[528px] sm:min-h-[468px] min-h-[300px] bg-lightbeige text-darkgreen shadow-lg rounded-lg p-4">
                 <img
                    src={item.cover_image}
                    alt={item.name}
@@ -103,10 +103,10 @@ const Projects = () => {
                 />
                 <div className="flex flex-col justify-between space-y-[8px] mt-4">
                    <h2 className="sm:text-2xl text-lg font-[700]">{item.name}</h2>
-                   <p className="text-sm font-[300]">{item.brief}</p>
+                   <p className="font-[400]">{item.brief}</p>
                    <ul className="min-h-[72px] list-style-none flex flex-wrap justify-center items-center">
                        {Array.isArray(item.stacks)&&item.stacks.map((stack, i) => (
-                       <li key={i} className="min-w-[70px] bg-darkblue text-lightbeige border brder-darkblue font-[300] text-[12px] p-2 rounded-full">{stack}</li>
+                       <li key={i} className="min-w-[70px] bg-darkgreen text-lightbeige border brder-darkgreen font-[400] text-[12px] p-2 rounded-full">{stack}</li>
                        ))}
                    </ul>
                    <div className="flex flex-wrap justify-between items-end gap-4">

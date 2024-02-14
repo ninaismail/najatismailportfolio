@@ -1,7 +1,6 @@
 @font-face {
-    font-family: "zillaslab";
+    font-family: "lato";
     font-style: normal;
-    font-weight: 500;
-    src: local("zillaslab") url("../../public/fonts/zillaslab/ZillaSlab-Regular.woff2") format('woff2');
+    src: local("lato") url("../../public/fonts/lato/Lato-Regular.woff2") format('woff2');
     display: swap;
 }

@@ -12,15 +12,15 @@ const gridItems = GridItemsData();
         {Array.isArray(gridItems)&&gridItems.map((item, i) => (
             <div key={item.title + item.type + i} className={`col-span-full ${(i===0 || i===7) ? "sm:col-span-4" : "sm:col-span-2 "}`}>
             {item.type === "profile" ? (
-            <Profile item={item} />
+                <Profile item={item} />
             ) : item.type === "myapproach" ? (
-            <MyApproach item={item} />
+                <MyApproach item={item} />
             ) : item.type === "socials" ? (
-            <Socials item={item} />
-            ) : item.type === "contact" ? (
-            <Contact item={item} />
+                <Socials item={item} />
             ) : item.type === "project" ? (
                 <Project item={item} />
+            ) : item.type === "contact" ? (
+                <Contact item={item} />
             ) : (
             <div>Need to create new component type.</div>
             )}

@@ -1,8 +1,8 @@
 import Popup from './Popup'
 import Slider from './Slider'
-export default function Gallery({images, close}) {
+export default function Gallery({images, isOpen, onClose}) {
   return (
-    <Popup onClose={close}>
+    <Popup isOpen={isOpen} onClose={onClose}>
     <div className="relative z-20 lg:w-[900px] md:w-[748px] sm:w-[620px] w-[270px] h-auto aspect-video">
     <Slider>
     {Array.isArray(images)&&images.map((item, i) => (

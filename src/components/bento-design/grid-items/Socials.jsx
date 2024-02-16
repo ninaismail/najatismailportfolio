@@ -1,6 +1,6 @@
 const Socials = ({item}) => {
     return (
-        <div className="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg flex flex-col space-x-6">
+        <div className="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg flex flex-col">
             <div className="absolute z-[-1] -inset-1 bg-gradient-to-r from-lightgreen to-green rounded-lg blur opacity-25"></div>
             <h1 className="sm:text-lg text-md font-[700]">{item.title}</h1>
             {Array.isArray(item.socials)&&item.socials.map((social, i) => (

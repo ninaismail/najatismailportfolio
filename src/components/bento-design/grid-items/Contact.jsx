@@ -1,6 +1,6 @@
 const Contact = ({item}) => {
     return (
-        <div className="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg flex items-center space-x-6">
+        <div className="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg flex items-center">
             <div className="absolute z-[-1] -inset-1 bg-gradient-to-r from-lightgreen to-green rounded-lg blur opacity-25"></div>
             <a href={item.link} title="Open Your Email" aria-label="Click here to open your email" rel="noopener noreferrer" target="_blank">
                 <img 

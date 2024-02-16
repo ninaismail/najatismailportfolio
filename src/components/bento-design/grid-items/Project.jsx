@@ -1,12 +1,11 @@
 import { useState } from "react";
-import Gallery from "../../Gallery";
+import FsLightbox from "fslightbox-react";
 
 const Project = ({item}) => {
-    const [showGallery, setShowGallery] = useState(null);
+    const [isOpen, setisOpen] = useState(0);
 
-    const toggleGallery = (i) => {
-      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-      setShowGallery(i);
+    const toggleOpen = (i) => {
+        setisOpen(i);
     };
     return (
         <>
@@ -16,7 +15,7 @@ const Project = ({item}) => {
                     data-tooltip="tooltip-open-gallery"
                     src={item.cover_image}
                     alt={item.title}
-                    onClick={()=>toggleGallery(item.id)}
+                    onClick={()=>toggleOpen(item.id)}
                     className="w-full mx-auto aspect-video cursor-pointer tooltip-on-hover"
                 />
                 <p data-tooltip-target="tooltip-open-gallery" role="tooltip" 
@@ -39,7 +38,10 @@ const Project = ({item}) => {
                     </div>
                 </div>        
             </div>
-            <Gallery isOpen={showGallery} key={item.id} images={item.images} onClose={()=>setShowGallery(null)}/>
+            <FsLightbox
+				toggler={()=>toggleOpen(item.id)}
+				sources={item.images}
+			/>
         </>
     );
 }

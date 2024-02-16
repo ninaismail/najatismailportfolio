@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["lato"],
+        primary: ["Lato"],
       },
       colors: {
         beige:"#F5F5DC",

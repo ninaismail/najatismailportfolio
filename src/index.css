@@ -1,4 +1,5 @@
 @import url('../src/assets/fonts.css');
+@import url('../src/assets/scrollbar.css');
 @import url('../src/assets/tooltip.css');
 @tailwind base;
 @tailwind components;

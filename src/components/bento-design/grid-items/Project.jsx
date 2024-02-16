@@ -39,7 +39,7 @@ const Project = ({item}) => {
                     </div>
                 </div>        
             </div>
-            <Gallery isOpen={showGallery} key={item.id} images={item.images} onClose={()=>toggleGallery(null)}/>
+            <Gallery isOpen={showGallery} key={item.id} images={item.images} onClose={()=>setShowGallery(null)}/>
         </>
     );
 }

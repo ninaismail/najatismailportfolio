@@ -8,9 +8,9 @@ import Socials from "./grid-items/Socials";
 const BentoDesign = () => {
 const gridItems = GridItemsData();
     return (
-        <div className="md:w-10/12 grid grid-cols-4 mx-auto p-6 gap-6">
+        <div className="sm:w-10/12 grid grid-cols-4 mx-auto p-6 gap-6">
         {Array.isArray(gridItems)&&gridItems.map((item, i) => (
-            <div key={item.title + item.type + i} className={`col-span-full ${(i===0 || i===7) ? "md:col-span-4" : "md:col-span-2 "}`}>
+            <div key={item.title + item.type + i} className={`col-span-full ${(i===0 || i===7) ? "sm:col-span-4" : "sm:col-span-2 "}`}>
             {item.type === "profile" ? (
             <Profile item={item} />
             ) : item.type === "myapproach" ? (

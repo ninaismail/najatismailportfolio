@@ -7,13 +7,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["Lato"],
+        lato: ["Lato"],
       },
       colors: {
         beige:"#F5F5DC",
         lightbeige:"#FAFDF3",
         green:"#577458",
-        lightgreen:"#84b384",
+        lightgreen:"#b3f5b3",
         darkgreen:"#1f291f"
       }
     }

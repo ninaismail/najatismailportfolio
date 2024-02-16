@@ -87,7 +87,7 @@ const Projects = () => {
     };
     return (
         <section id="my_projects" className="relative w-full h-full min-h-screen mx-auto py-5 bg-gradient-to-b from-slate-50 via-green to-slate-50 selection:bg-lightgreen text-center flex flex-col justify-center gap-4">
-            <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl sm:text-4xl text-3xl font-[700] mb-4">Check Out My Work!</h1>
+            <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl sm:text-4xl text-3xl font-[800] mb-4">Check Out My Work!</h1>
             <p className="w-11/12 mx-auto lg:text-4xl md:text-xl sm:text-lg text-center font-[400] mb-2">
             I'm a skilled web developer contributing to a diverse range of projects, showcasing proficiency in web development and modern technology stacks. Here's a snapshot of some of my notable projects:
             </p>
@@ -103,12 +103,12 @@ const Projects = () => {
                    onClick={()=>toggleGallery(i)}
                 />
                 <p data-tooltip-target="tooltip-open-gallery" role="tooltip" 
-                className="absolute z-10 px-3 py-2 text-sm font-[700] opacity-0 transition-opacity duration-300 bg-green text-beige rounded-lg shadow-sm tooltip">
+                className="absolute z-10 px-3 py-2 text-sm font-[800] opacity-0 transition-opacity duration-300 bg-green text-beige rounded-lg shadow-sm tooltip">
                     Open Gallery
                     <span class="tooltip-arrow" data-popper-arrow></span>
                 </p>
                 <div className="flex flex-col justify-between space-y-[8px] mt-4">
-                   <h2 className="sm:text-2xl text-lg font-[700]">{item.name}</h2>
+                   <h2 className="sm:text-2xl text-lg font-[800]">{item.name}</h2>
                    <p className="font-[400]">{item.brief}</p>
                    <ul className="min-h-[72px] list-style-none flex flex-wrap justify-center items-center">
                        {Array.isArray(item.stacks)&&item.stacks.map((stack, i) => (
@@ -116,9 +116,9 @@ const Projects = () => {
                        ))}
                    </ul>
                    <div className="flex flex-wrap justify-between items-end gap-4">
-                    {item.link && <a href={item.link} target="_blank" aria-label={`View the published webdite of ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[700] hover:brightness-200">View <span className="text-2xl">&rarr;</span></a>}
-                    <a href={item.github.frontend} target="_blank" aria-label={`View my frontend repo for ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[700] hover:brightness-200">Frontend Repo <span className="text-2xl">&rarr;</span></a>
-                    {item.github.backend && <a href={item.github.backend} target="_blank"aria-label={`View my backend repo for ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[700] hover:brightness-200">Backend Repo <span className="text-2xl">&rarr;</span></a>}
+                    {item.link && <a href={item.link} target="_blank" aria-label={`View the published webdite of ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[800] hover:brightness-200">View <span className="text-2xl">&rarr;</span></a>}
+                    <a href={item.github.frontend} target="_blank" aria-label={`View my frontend repo for ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[800] hover:brightness-200">Frontend Repo <span className="text-2xl">&rarr;</span></a>
+                    {item.github.backend && <a href={item.github.backend} target="_blank"aria-label={`View my backend repo for ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[800] hover:brightness-200">Backend Repo <span className="text-2xl">&rarr;</span></a>}
                    </div>
                 </div>
               </div>    

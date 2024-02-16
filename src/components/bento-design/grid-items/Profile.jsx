@@ -11,7 +11,7 @@ const Profile = ({item}) => {
                 className="mx-auto"
                 />
             <div className="space-y-2">
-            <h1 className="sm:text-lg text-md font-[700]">{item.title}</h1>
+            <h1 className="sm:text-lg text-md font-[800]">{item.title}</h1>
                 <p className="font-[400] text-slate-800">{item.brief}</p>
             </div>        
        </div>

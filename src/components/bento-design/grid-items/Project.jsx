@@ -2,10 +2,10 @@ import { useState } from "react";
 import FsLightbox from "fslightbox-react";
 
 const Project = ({item}) => {
-    const [isOpen, setisOpen] = useState(0);
+    const [isOpen, setisOpen] = useState(false);
 
-    const toggleOpen = (i) => {
-        setisOpen(i);
+    const toggleOpen = () => {
+        setisOpen(true);
     };
     return (
         <>
@@ -19,12 +19,12 @@ const Project = ({item}) => {
                     className="w-full mx-auto aspect-video cursor-pointer tooltip-on-hover"
                 />
                 <p data-tooltip-target="tooltip-open-gallery" role="tooltip" 
-                className="absolute z-10 px-3 py-2 text-sm font-[700] opacity-0 transition-opacity duration-300 bg-green text-beige rounded-lg shadow-sm tooltip">
+                className="absolute z-10 px-3 py-2 text-sm font-[800] opacity-0 transition-opacity duration-300 bg-green text-beige rounded-lg shadow-sm tooltip">
                     Open Gallery
                     <span class="tooltip-arrow" data-popper-arrow></span>
                 </p>
                 <div className="flex flex-col justify-between space-y-2 mt-4">
-                    <h2 className="sm:text-2xl text-lg font-[700]">{item.title}</h2>
+                    <h2 className="sm:text-2xl text-lg font-[800]">{item.title}</h2>
                     <p className="font-[400]">{item.brief}</p>
                     <ul className="list-style-none flex flex-wrap items-center text-center">
                         {Array.isArray(item.stacks)&&item.stacks.map((stack, i) => (
@@ -32,14 +32,14 @@ const Project = ({item}) => {
                         ))}
                     </ul>
                     <div className="flex flex-wrap justify-between items-end gap-4">
-                    {item.link && <a href={item.link} target="_blank" aria-label={`View the published webdite of ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[700] hover:brightness-200">View <span className="text-2xl">&rarr;</span></a>}
-                    <a href={item.github.frontend} target="_blank" aria-label={`View my frontend repo for ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[700] hover:brightness-200">Frontend Repo <span className="text-2xl">&rarr;</span></a>
-                    {item.github.backend && <a href={item.github.backend} target="_blank"aria-label={`View my backend repo for ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[700] hover:brightness-200">Backend Repo <span className="text-2xl">&rarr;</span></a>}
+                    {item.link && <a href={item.link} target="_blank" aria-label={`View the published webdite of ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[800] hover:brightness-200">View <span className="text-2xl">&rarr;</span></a>}
+                    <a href={item.github.frontend} target="_blank" aria-label={`View my frontend repo for ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[800] hover:brightness-200">Frontend Repo <span className="text-2xl">&rarr;</span></a>
+                    {item.github.backend && <a href={item.github.backend} target="_blank"aria-label={`View my backend repo for ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[800] hover:brightness-200">Backend Repo <span className="text-2xl">&rarr;</span></a>}
                     </div>
                 </div>        
             </div>
             <FsLightbox
-				toggler={()=>toggleOpen(item.id)}
+				toggler={toggleOpen}
 				sources={item.images}
 			/>
         </>

@@ -12,16 +12,16 @@ const About = () => {
             How do I introduce myself in an effective way? Hmmm, maybe by telling you about my values, mission and vission 💡:
             </p>
             <li className="relative lg:text-4xl md:text-xl sm:text-lg text-justify sm:ms-10">
-                <span className="sm:text-8xl text-6xl opacity-50 text-green font-[700] absolute sm:-inset-5 -inset-2">1.</span>
+                <span className="sm:text-8xl text-6xl opacity-50 text-green font-[800] absolute sm:-inset-5 -inset-2">1.</span>
                 <strong>My Values: </strong> 
                 I value authentecity in myself and others. I'm honest and will say what needs to be said but with empathy and respect. And most inportantly I'm kind.
             </li>
             <li className="relative lg:text-4xl md:text-xl sm:text-lg text-justify sm:ms-10">
-                <span className="sm:text-8xl text-6xl opacity-50 text-green font-[700] absolute sm:-inset-5 -inset-2">2.</span>
+                <span className="sm:text-8xl text-6xl opacity-50 text-green font-[800] absolute sm:-inset-5 -inset-2">2.</span>
                 <strong>My Mission: </strong> I deliver the best result possible for every client case. I take pride in my craft and I give a 100%. I approach my projects with planning and strategy.
             </li>
             <li className="relative lg:text-4xl md:text-xl sm:text-lg text-justify sm:ms-10">
-                <span className="sm:text-8xl text-6xl opacity-50 text-green font-[700] absolute sm:-inset-5 -inset-2">3.</span>
+                <span className="sm:text-8xl text-6xl opacity-50 text-green font-[800] absolute sm:-inset-5 -inset-2">3.</span>
                 <strong>My Vision: </strong> I believe that my approach will help you with your existing and upcomming projects.
             </li>
         </ul>

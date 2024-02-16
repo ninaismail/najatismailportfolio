@@ -2,10 +2,10 @@ import { useState } from "react";
 import FsLightbox from "fslightbox-react";
 
 const Project = ({item}) => {
-    const [isOpen, setisOpen] = useState(false);
-
-    const toggleOpen = () => {
-        setisOpen(true);
+    const [isOpen, setIsOpen] = useState(0);
+    
+    const toggleLightbox = () => {
+        setIsOpen(!isOpen);
     };
     return (
         <>
@@ -15,7 +15,7 @@ const Project = ({item}) => {
                     data-tooltip="tooltip-open-gallery"
                     src={item.cover_image}
                     alt={item.title}
-                    onClick={()=>toggleOpen(item.id)}
+                    onClick={toggleLightbox}
                     className="w-full mx-auto aspect-video cursor-pointer tooltip-on-hover"
                 />
                 <p data-tooltip-target="tooltip-open-gallery" role="tooltip" 
@@ -36,10 +36,10 @@ const Project = ({item}) => {
                     <a href={item.github.frontend} target="_blank" aria-label={`View my frontend repo for ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[800] hover:brightness-200">Frontend Repo <span className="text-2xl">&rarr;</span></a>
                     {item.github.backend && <a href={item.github.backend} target="_blank"aria-label={`View my backend repo for ${item.title}`} rel="noopener noreferrer" className="cursor-pointer sm:text-md font-[800] hover:brightness-200">Backend Repo <span className="text-2xl">&rarr;</span></a>}
                     </div>
-                </div>        
+                </div>
             </div>
             <FsLightbox
-				toggler={toggleOpen}
+                toggler={isOpen}
 				sources={item.images}
 			/>
         </>

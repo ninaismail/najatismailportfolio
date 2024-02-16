@@ -1,4 +1,4 @@
-const MyApproach = ({item}) => {
+const GridItems = () => {
     return (
         <div>
             
@@ -6,4 +6,4 @@ const MyApproach = ({item}) => {
     );
 }
 
-export default MyApproach;
+export default GridItems;

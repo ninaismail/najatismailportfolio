@@ -1,16 +1,10 @@
-import About from "./components/About"
-import Banner from "./components/Banner"
-import Contact from "./components/Contact"
-import Projects from "./components/Projects"
+import BentoDesign from "./components/bento-design/BentoDesign"
 
 function App() {
 
   return (
   <main className="font-primary">
-    <Banner/>
-    <About/>
-    <Projects/>
-    <Contact/>
+    <BentoDesign/>
   </main>
   )
 }

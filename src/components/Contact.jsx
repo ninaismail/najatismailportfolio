@@ -1,4 +1,4 @@
-const Contact = () => {
+const Contact_old = () => {
 
     return (
         <section className="w-full sm:min-h-[400px] min-h-[200px] mx-auto text-center bg-slate-50 selection:bg-lightgreen flex flex-col justify-center items-center">
@@ -35,4 +35,4 @@ const Contact = () => {
     );
 }
 
-export default Contact;
+export default Contact_old;

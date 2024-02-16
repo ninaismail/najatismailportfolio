@@ -4,29 +4,41 @@ export default function GridItemsData(){
             id:1,
             type:"profile",
             title:"Hi I'm Najat And I'm a Developer",
-            breif:"I'm a full stack developer mainly focused on front-end development with 4 years of experience in the tech field. I’ve developed and  maintained many projects in React/Next.js and other stacks. I also have a good grasp on project management, database and UX.",
-            image:"../../images/myavatarpic.png",
-            cols:"2",
-            rows:"4"
+            brief:"I'm a full stack developer mainly focused on front-end development with 4 years of experience in the tech field. I’ve developed and  maintained many projects in React/Next.js and other stacks. I also have a good grasp on project management, database and UX.",
+            image:"/images/myavatarpic.png",
         },        
         {
             id:2,
             type:"myapproach",
             title:"My Approach",
-            breif:"I take pride in my craft and I give a 100%. I approach my projects with planning and strategy.",
-            icon:"<svg class='w-8 h-8 text-purple-600' fill='none' viewBox='0 0 24 24'><path stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6.75 6.75C6.75 5.64543 7.64543 4.75 8.75 4.75H15.25C16.3546 4.75 17.25 5.64543 17.25 6.75V19.25L12 14.75L6.75 19.25V6.75Z'></path></svg>",
-            cols:"2",
-            rows:"2"
-        },
+            brief:"I take pride in my craft and I give a 100%. I approach my projects with planning and strategy.",
+            icon:<svg className='w-24 h-24 text-green' fill='none' viewBox='0 0 24 24'><path stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6.75 6.75C6.75 5.64543 7.64543 4.75 8.75 4.75H15.25C16.3546 4.75 17.25 5.64543 17.25 6.75V19.25L12 14.75L6.75 19.25V6.75Z'></path></svg>
+        }, 
         {
             id:3,
-            type:"whatido",
-            title:"What I Do?",
-            breif:"................",
-            icon:"",
-            cols:"2",
-            rows:"2"
-        },  
+            type:"socials",
+            title:"I'm Growing On",
+            socials:[
+                {
+                    id:1,
+                    title:"My Linkedin",
+                    link:"https://www.linkedin.com/in/najat-ismail",
+                    brief:"I share stuff about web development...",
+                    icon:<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 48 48">
+                    <path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"></path>
+                    </svg>
+                },
+                {
+                    id:2,
+                    title:"My Youtube",
+                    link:"https://www.youtube.com/channel/UCgfkjD1cwCQZ5pDq4jK9bdw",
+                    brief:"I try to post short videos on tech stuff...",
+                    icon:<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 48 48">
+                    <path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"></path><path fill="#FFF" d="M20 31L20 17 32 24z"></path>
+                    </svg>
+                }
+            ]
+        },
         {
             id:4,
             type:"project",
@@ -41,9 +53,7 @@ export default function GridItemsData(){
             brief: "A governmental platform for the Saudi Irrigation Organization so citizens can benifit from its services from right where they are.",
             link: "https://www.sio.gov.sa",
             github:"",
-            stacks: ["Next.js"],
-            cols:"2",
-            rows:"4"
+            stacks: ["Next.js"]
         },
         {
             id:5,
@@ -60,9 +70,7 @@ export default function GridItemsData(){
             brief: "A SaaS solution for restaurants that branches, clients and drivers can use to accomplish their respective goals.",
             link: "https://www.mannasat.net",
             github:"",
-            stacks: ["Next.js"],
-            cols:"2",
-            rows:"4"
+            stacks: ["Next.js"]
         },
         {
             id:6,
@@ -92,9 +100,7 @@ export default function GridItemsData(){
                 frontend:"https://github.com/ninaismail/icedcoffeespotreactapp",
                 backend:"https://github.com/ninaismail/icedcoffeespotnodeapi"
             },
-            stacks: ["React","Vite","Node.js","Express","MongoDB"],
-            cols:"2",
-            rows:"4"
+            stacks: ["React","Vite","Node.js","Express","MongoDB"]
         }, 
         {
             id:7,
@@ -114,39 +120,15 @@ export default function GridItemsData(){
                 frontend:"https://github.com/ninaismail/mylibrarynextapp",
                 backend:"https://github.com/ninaismail/mylibrarylaravelapi"
             },
-            stacks: ["Next.js","Laravel","MySQL"],
-            cols:"2",
-            rows:"4"
-        },
+            stacks: ["Next.js","Laravel","MySQL"]
+        },      
         {
             id:8,
-            type:"socials",
-            title:"I'm Growing On",
-            socials:[
-                {
-                    id:1,
-                    link:"https://www.linkedin.com/in/najat-ismail",
-                    brief:"I share stuff about web development...",
-                    icon:'<svg fill="#2A2D32" className="w-[36px] h-[36px]" width="64px" height="64px" viewBox="-5.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"/> <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <title>linkedin</title> <path d="M0 8.219v15.563c0 1.469 1.156 2.625 2.625 2.625h15.563c0.719 0 1.406-0.344 1.844-0.781 0.469-0.469 0.781-1.063 0.781-1.844v-15.563c0-1.469-1.156-2.625-2.625-2.625h-15.563c-0.781 0-1.375 0.313-1.844 0.781-0.438 0.438-0.781 1.125-0.781 1.844zM2.813 10.281c0-1 0.813-1.875 1.813-1.875 1.031 0 1.875 0.875 1.875 1.875 0 1.031-0.844 1.844-1.875 1.844-1 0-1.813-0.813-1.813-1.844zM7.844 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.656c0.375 0 0.375 0.438 0.375 0.719 0.75-0.75 1.719-0.938 2.719-0.938 2.438 0 4 1.156 4 3.719v6.438c0 0.219-0.188 0.406-0.375 0.406h-2.75c-0.219 0-0.375-0.219-0.375-0.406v-5.813c0-0.969-0.281-1.5-1.375-1.5-1.375 0-1.719 0.906-1.719 2.125v5.188c0 0.219-0.219 0.406-0.438 0.406h-2.719c-0.156 0-0.375-0.219-0.375-0.406zM2.875 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.719c0.25 0 0.406 0.156 0.406 0.406v9.531c0 0.219-0.188 0.406-0.406 0.406h-2.719c-0.188 0-0.375-0.219-0.375-0.406z"/> </g></svg>'
-                },
-                {
-                    id:2,
-                    link:"https://www.youtube.com/channel/UCgfkjD1cwCQZ5pDq4jK9bdw",
-                    brief:"I try to post short videos on tech stuff...",
-                    icon:'<svg fill="#2A2D32" className="w-[32px] h-[32px]" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <g id="XMLID_822_"> <path id="XMLID_823_" d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938 C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527 C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991 c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764 c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861 C204.394,157.263,202.325,160.684,199.021,162.41z"/> </g> </g></svg>'
-                }
-            ],
-            cols:"4",
-            rows:"3"
-        },          
-        {
-            id:9,
             type:"contact",
             title:"Let's Work Together",
-            icon:"<svg class='w-8 h-8 text-purple-600' fill='none' viewBox='0 0 24 24'><path stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6.75 6.75C6.75 5.64543 7.64543 4.75 8.75 4.75H15.25C16.3546 4.75 17.25 5.64543 17.25 6.75V19.25L12 14.75L6.75 19.25V6.75Z'></path></svg>",
             link:"mailto:najatt.ismail@gmail.com?subject=Mail from Your Portfolio Website",
-            cols:"4",
-            rows:"2"
+            brief:"Interested in working together? reach out and let's discuss your project ideas!",
+            gif:"/gifs/icons8-email.gif"
         }
     ];
 }

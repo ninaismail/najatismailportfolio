@@ -9,7 +9,7 @@ const Project = ({item}) => {
     };
     return (
         <>
-            <div key={item.id} className="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg flex flex-col">
+            <div key={item.id} className="relative px-7 py-6 bg-white ring-1 ring-lightgreen/5 rounded-lg flex flex-col">
             <div className="absolute z-[-1] -inset-1 bg-gradient-to-r from-lightgreen to-green rounded-lg blur opacity-25"></div>
                 <img
                     data-tooltip="tooltip-open-gallery"

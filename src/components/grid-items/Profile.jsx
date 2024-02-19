@@ -15,12 +15,12 @@ const Profile = ({item}) => {
                 <p className="font-[400] text-content dark:text-bg">{item.brief}</p>
             </div>
             <div className="flex flex-wrap gap-2">
-                <p className="font-[400] dark:text-bg border-[2px] border-accent3 dark:border-darkaccent2 px-4 py-3 w-fit rounded-lg">{item.location}</p>
+                <p className="font-[400] dark:text-bg border-[2px] border-accent3 dark:border-darkaccent1 px-4 py-3 w-fit rounded-lg">{item.location}</p>
                 <a href={item.resumelink} title="Download My Resume" aria-label="Click here to download my resume" download rel="noopener noreferrer" target="_blank"
-                className="cursor-pointer hover:bg-slate-200 font-[400] dark:text-bg border-[2px] border-accent3 dark:border-darkaccent2 px-4 py-3 w-fit mt-0 rounded-lg">
+                className="cursor-pointer hover:bg-slate-200 font-[400] dark:text-bg border-[2px] border-accent3 dark:border-darkaccent1 px-4 py-3 w-fit mt-0 rounded-lg">
                 {item.resume}</a>                
                 <a href={item.contactlink} title="Open Your Email" aria-label="Click here to open your email" rel="noopener noreferrer" target="_blank"
-                className="cursor-pointer hover:bg-slate-200 font-[400] dark:text-bg border-[2px] border-accent3 dark:border-darkaccent2 px-4 py-3 w-fit mt-0 rounded-lg">
+                className="cursor-pointer hover:bg-slate-200 font-[400] dark:text-bg border-[2px] border-accent3 dark:border-darkaccent1 px-4 py-3 w-fit mt-0 rounded-lg">
                 {item.contact}</a>
             </div>
        </div>

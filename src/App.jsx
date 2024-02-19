@@ -1,9 +1,11 @@
-import BentoDesign from "./components/bento-design/BentoDesign"
+import BentoDesign from "./components/BentoDesign"
+import ThemeToggle from "./components/ThemeToggle"
 
 function App() {
 
   return (
-  <main className="font-lato">
+  <main className="font-lato dark:bg-black">
+    <ThemeToggle/>
     <BentoDesign/>
   </main>
   )

@@ -1,4 +1,4 @@
-import GridItemsData from "../../config/grid-items-data";
+import GridItemsData from "../config/grid-items-data";
 import Profile from "./grid-items/Profile";
 import Project from "./grid-items/Project";
 import Social from "./grid-items/Social";
@@ -25,7 +25,7 @@ const GridItemVariants = {
         variants={GridVariants}
         initial="hidden"
         animate="show"
-        className="grid grid-flow-row grid-cols-4 gap-6 p-6 mx-auto sm:w-10/12 xl:overflow-y-auto selection:bg-lightgreen">
+        className="grid grid-flow-row grid-cols-4 gap-6 p-6 mx-auto sm:w-10/12 xl:overflow-y-auto selection:bg-[accent1]">
         {Array.isArray(gridItems)&&gridItems.map((item, i) => (
             <motion.div 
             key={item.title + item.type + i} 

@@ -27,7 +27,7 @@ const ThemeToggle = () => {
       className="fixed inset-0 z-10 w-12 h-12 p-3 text-center rounded-br-lg shadow-md shadow-accent2 bg-accent1/95 ring-1 ring-accent2"
       onClick={() => setDarkMode(!darkMode)}
     >
-      {darkMode ? LightOn : LightOff}
+      {darkMode ? <LightOn /> : <LightOff />}
     </button>
   );
 };

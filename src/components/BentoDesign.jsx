@@ -31,8 +31,9 @@ const GridItemVariants = {
             key={item.title + item.type + i} 
             variants={GridItemVariants}
             className={`col-span-full
-            ${(item.type === "social" && item.title !== "Github") ? "md:col-span-1" : "md:col-span-2"}
-            ${(item.type === "profile") ? "md:row-span-3" : (item.type === "social" && item.title=== "Github") ? "md:row-span-1" : "md:row-span-2"}`}>
+            ${(item.type === "social" && item.title !== "Github") ? "lg:col-span-1 md:col-span-2" : "lg:col-span-2 md:col-span-4"}
+            ${(item.type === "profile") ? "lg:col-span-2 md:col-span-4" : '' }
+            ${(item.type === "profile") ? "lg:row-span-3 md:row-span-2" : (item.type === "social" && item.title=== "Github") ? "md:row-span-1" : "lg:row-span-2 md:row-span-1"}`}>
             {item.type === "profile" ? (
                 <Profile item={item} />
             ) : item.type === "social" ? (

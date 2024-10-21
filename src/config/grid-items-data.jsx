@@ -153,7 +153,7 @@ export default function GridItemsData() {
       ],
       title: "AITS MENA",
       brief:
-        "A B2B company knowledge website that provides industrial innovation content and a way to connect with potential clients.",
+        "A knowledge hub for a reputable B2B company, offering users insights through industrial innovation blog posts and an easy way to connect. The site features a CMS, allowing admins to dynamically manage blog posts and career openings.",
       link: "https://www.aitsmena.com",
       github: "",
       stacks: ["Vue.js", "Laravel", "MySQL"],
@@ -180,7 +180,7 @@ export default function GridItemsData() {
       ],
       title: "Bissar Concepts",
       brief:
-        "A portfolio website for a reputable architect showcasing his projects and connecting him to clients.",
+        "A portfolio website for a visionary architect, showcasing his projects and connecting him with clients, the website includes a CMS, making everything fully customizable from the projects to the sections' content.",
       link: "https://www.bissarconcepts.com",
       github: "",
       stacks: ["Vue.js", "Laravel", "MySQL"],
@@ -198,7 +198,7 @@ export default function GridItemsData() {
       ],
       title: "IBI Holding",
       brief:
-        "A landing page for an innovation hub highlighting its services and connecting it to clients.",
+        "A captivating landing page introducing a holding company and showcasing its diverse investment services and connecting it to future partnerships.",
       link: "https://www.ibiholding.com",
       github: "",
       stacks: ["Vue.js", "Laravel", "MySQL"],
